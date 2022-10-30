@@ -5,7 +5,7 @@ let result = document.getElementById('result');
 let playButton = document.getElementById('play');
 var interval;
 
-const maxWidth = 120, maxHeight = 50;    
+const maxWidth = 90, maxHeight = 60;   
 
 const captureImage = () => {
     let c;
@@ -65,7 +65,7 @@ const toGrayScale = (r, g, b) => {
     return (0.21 * r + 0.71 * g + 0.07 * b);
 }
 
-const grayRamp = "@#$!~`";
+const grayRamp = "@#$!~`.";
 
 const rampLength = grayRamp.length;
 
@@ -91,7 +91,7 @@ const convertToGrayScale = (context, width, height) => {
 }
 
 const drawAscii = (grayScales, width) => {
-    let ascii;
+    let ascii = "";
     grayScales.forEach((grayScale, index) => {
         let nextChars = getCharacterForGrayScale(grayScale);
         if((index + 1) % width === 0) {
