@@ -1,0 +1,100 @@
+html {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bounding-box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+/* contains the input field and the start button */
+.container {
+    width: 20%;
+    margin: 5px;
+    box-shadow: 5px 5px 10px #252526;
+    display: flex;
+    flex-direction: row;
+}
+
+#stage0 {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    flex-direction: column;
+}
+
+/* contains the input file */
+.nav {
+    width: 50%;
+    position: relative;
+    box-shadow: 3px 3px 10px #252526;
+    border-radius: 5px;
+}
+
+/* file input */
+.nav input {
+    word-break: break-all;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #edd7f1;
+}
+
+/* contains play button */
+.button {
+    padding-top: 10px;
+    width: 40%;
+    height: 10%;
+}
+
+/* play button */
+.button button {
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    border: none;
+    background: #678d1d;
+    font-size: 16px;
+}
+
+.button button:hover {
+    cursor: pointer;
+    background: #2e3d11;
+    transform: scale(1.05, 1.05);
+}
+
+/* video container */
+#video1 {
+    width: 100%;
+    display:block;
+}
+
+#video1 video {
+    diplay: block;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+/* result after conversion */
+#result {
+    display: block;
+    background: white;
+    margin-left: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 15%;
+    font-family: Courier New;
+    font-size: 14px;
+    line-height: 8px;
+}
